@@ -3,7 +3,9 @@
 ### Instructions for Docker Installation on Ubuntu 18.04
 
 Check Ubuntu version
-```lsb_release -a
+
+```
+lsb_release -a
 ```
 
 Update all Libraries (First time)
