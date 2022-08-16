@@ -9,23 +9,44 @@ lsb_release -a
 ```
 
 Update all Libraries (First time)
->sudo apt-get update
+
+```
+sudo apt-get update
+```
 
 Install Docker
->sudo apt-get install docker.io
+
+```
+sudo apt-get install docker.io
+```
 
 Add current user to docker group
->sudo usermod -aG docker $USER
+
+```
+sudo usermod -aG docker $USER
+```
 
 Logout & log back in or run the following command to activate changes to the docker group
->newgrp docker
+
+```
+newgrp docker
+```
 
 Check if docker is up & running
->docker version
+
+```
+docker version
+```
 
 Check status of docker daemon
->sudo systemctl status docker
+
+```
+sudo systemctl status docker
+```
 Type ‘q’ to get out of terminal
 
 In case docker daemon is not started, start it using command
->sudo systemctl start docker
+
+```
+sudo systemctl start docker
+```
