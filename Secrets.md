@@ -10,8 +10,18 @@
 
 # Imperative way
 ```
-docker secret create <name-of-my-secret> 
+docker secret create <name-of-my-secret> -
 ```
 ### Enter secret data/string and after completion, press 'CTRL + D'
+
+# Imperative way2
+```
+printf "This is a secret" | docker secret create my_secret_data -
+```
+
+# Creating from file
+```
+docker secret create my_secret2 ./secret.txt
+```
 
 Tutorial for using this secret with redis : https://docs.docker.com/engine/swarm/secrets/
